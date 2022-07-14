@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.dashsec {
+  &_inner {
+    height: 100vh;
+
+    .dash_header {
+      text-align: left;
+      inset-inline-start: 1rem;
+      text-transform: uppercase;
+    }
+    .navbarinfo_sec {
+      &_inner {
+        .navbar_contents {
+          ul {
+            display: flex;
+            li {
+              margin-right: 1rem;
+              margin-top: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

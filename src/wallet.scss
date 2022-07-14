@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.wallet_section {
+  //Change later one i learn how to route
+  margin-top: 30rem;
+  &_inner {
+    .section_part {
+      .up_section {
+        background-color: #fafafa;
+        &_inner {
+          .balance {
+            font-size: 30px;
+          }
+          .username {
+            margin-top: -20px;
+          }
+
+          .send_recieve_sec {
+            margin-left: 32rem;
+
+            .logos_send_recieve {
+              ul {
+                display: flex;
+
+                li {
+                  margin: 10px;
+                }
+              }
+            }
+
+            .text_send_recieve {
+              ul {
+                display: flex;
+                li {
+                  margin: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .section_dowm_overall {
+        &_inner {
+          background-color: #fafafa;
+          width: 80%;
+          margin-left: 10rem;
+          margin-top: 5rem;
+          height: 22rem;
+          box-shadow: 1px 7px 10px 10px rgb(135 135 135 / 20%);
+
+          .down_section_header {
+            text-align: left;
+            margin-left: 5rem;
+            padding-top: 2rem;
+            width: 80%;
+            ul {
+              display: flex;
+              .name {
+                width: 24rem;
+              }
+              .last_price {
+                width: 10rem;
+              }
+              .change {
+                width: 10rem;
+              }
+            }
+          }
+
+          .down_section {
+            &_inner {
+              .table_section {
+                display: flex;
+                border: 0.1px solid #707a8a;
+                width: 80%;
+                margin-top: 0.1px;
+                margin-left: 7rem;
+                text-align: left;
+
+                .name_section {
+                  width: 30rem;
+                }
+                .price_section {
+                  width: 12rem;
+                }
+                .change_section {
+                  width: 13rem;
+                }
+                .markets_section {
+                  width: 13rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

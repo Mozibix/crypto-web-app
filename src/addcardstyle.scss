@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container {
+  margin-top: 20rem;
+
+  h1 {
+    color: blue;
+  }
+  .form {
+    margin-left: 22rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    box-shadow: 1px 7px 10px 10px rgb(135 135 135 / 20%);
+
+    label {
+      text-transform: capitalize;
+      margin-top: 1.5rem;
+    }
+
+    input {
+      width: 23rem;
+      margin-left: 1rem;
+
+      &[type="submit"] {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
