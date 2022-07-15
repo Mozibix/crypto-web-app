@@ -25,8 +25,8 @@ const DashBoardMenuInfo = (props) => {
       <div className="navbarinfo_sec_inner">
         <div className="navbar_contents">
           <ul>
-            <li>{props.navLogo}</li>
-            <li>{props.navPage}</li>
+            <li className="logo_nav">{props.navLogo}</li>
+            <li className="nav_text">{props.navPage}</li>
           </ul>
         </div>
       </div>
