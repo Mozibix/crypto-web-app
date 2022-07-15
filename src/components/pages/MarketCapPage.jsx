@@ -13,7 +13,6 @@ const MarketInfo = (props) => {
     <>
       <div className="market_data_inner">
         <div className="coin_icon">
-          {/* <p>{props.coinIcon}</p> */}
           <img src={props.coinIcon} alt="img" />
         </div>
         <div className="coin_name">

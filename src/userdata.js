@@ -3,7 +3,10 @@ import { BsFacebook, BsTelegram, BsReddit, BsLinkedin } from "react-icons/bs";
 import { SiBinance, SiLitecoin } from "react-icons/si";
 import { FaBitcoin, FaTiktok, FaMonero, FaEthereum } from "react-icons/fa";
 import { RiExchangeFundsFill } from "react-icons/ri";
-import { BiTransfer } from "react-icons/bi";
+import { MdDashboardCustomize, MdBarChart, MdSettings } from "react-icons/md";
+import { BiTransfer, BiTransferAlt } from "react-icons/bi";
+import { FcNeutralTrading } from "react-icons/fc";
+import { GiWallet } from "react-icons/gi";
 
 export const portfolioData = [
   {
@@ -257,33 +260,33 @@ export const marketCapData = [
 export const DashBoardData = [
   {
     id: 1,
-    navLogo: "logo",
+    navLogo: <MdDashboardCustomize />,
     navPage: "Dashboard",
-    text: "hello",
   },
   {
     id: 1,
-    navLogo: "logo",
+
+    navLogo: <FcNeutralTrading />,
     navPage: "Trade",
   },
   {
     id: 1,
-    navLogo: "logo",
-    navPage: "Webdata",
+    navLogo: <GiWallet />,
+    navPage: "Wallet",
   },
   {
     id: 1,
-    navLogo: "logo",
-    navPage: "Transtions",
+    navLogo: <BiTransferAlt />,
+    navPage: "Transactions",
   },
   {
     id: 1,
-    navLogo: "logo",
-    navPage: "Analysis",
+    navLogo: <MdBarChart />,
+    navPage: "Analytics",
   },
   {
     id: 1,
-    navLogo: "logo",
+    navLogo: <MdSettings />,
     navPage: "Settings",
   },
 ];
