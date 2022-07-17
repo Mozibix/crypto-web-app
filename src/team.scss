@@ -29,15 +29,17 @@
         width: 10rem;
         height: 25rem;
         inset-inline-start: 0.4rem;
-        cursor: pointer;
         border: 1px solid #f0f0f0;
         background-color: #fff;
-        // TRYING TRANSITION...  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        cursor: pointer;
 
         &:hover {
           box-shadow: 1px 7px 10px 10px rgb(135 135 135 / 20%);
           color: red;
         }
+
+        // TRYING TRANSITION...  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
         .team_img {
           img {
             width: 120px;

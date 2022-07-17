@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { dashTopData } from "../../userdata";
 
 export const DashBoardTop = () => {
@@ -16,8 +17,16 @@ const DashTop = (props) => {
           <ul>
             <li className="top_sec">{props.top_sec}</li>
             <div className="buttons_sec">
-              <li className="button">{props.top_sec_btn}</li>
-              <li className="button blue">{props.bottom_sec_btn}</li>
+              <li>
+                <Link to="/add-card" className="button">
+                  {props.top_sec_btn}
+                </Link>
+              </li>
+              <li>
+                <Link to="" className="button blue">
+                  {props.bottom_sec_btn}
+                </Link>
+              </li>
             </div>
           </ul>
         </div>

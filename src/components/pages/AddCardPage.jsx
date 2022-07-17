@@ -1,24 +1,5 @@
-// import React from "react";
-
-// export const AddCardPage = () => {
-//   return (
-//     <>
-//       <div className="add_card">
-//         <div className="add_card_inner">
-//           <div className="new_card">
-//             <p>add new card</p>
-//             <p className="small_text">enter card information</p>
-//           </div>
-//           <form action=""></form>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
 import React from "react";
-// import { Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 export const AddCardPage = () => {
   return (
     <div className="container">
@@ -33,11 +14,19 @@ export const AddCardPage = () => {
           name="cardNumber"
           placeholder="0000 0000 0000 0000"
         />
-        <label for="lname">Expiry Date:</label>
-        <input type="date" name="date" placeholder="12/22" />
-        <label for="lname">Security Code (CVV):</label>
-        <input type="password" name="cvv" placeholder="123" />
-        <input type="submit" value="Submit" />
+        <div className="exp_cvv_sec">
+          <div className="exp_data">
+            <label for="lname">Expiry Date:</label>
+            <input type="date" name="date" placeholder="12/22" />
+          </div>
+          <div className="cvv_sec">
+            <label for="lname">Security Code (CVV):</label>
+            <input type="password" name="cvv" placeholder="123" />
+          </div>
+        </div>
+        <Link to="/">
+          <input type="submit" value="Submit" />
+        </Link>
       </form>
     </div>
   );

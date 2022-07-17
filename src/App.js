@@ -2,27 +2,26 @@ import "./App.css";
 import "./dashboardmain.scss";
 
 import Dashboard from "./components/pages/Dashboard";
-// import { DashBoardNav } from "./components/pages/DashBoardNav";
-// import { DashBoardTop } from "./components/pages/DashBoardTop";
-// import { CoinSec } from "./components/pages/CoinSec";
-// import { MarketCapPage } from "./components/pages/MarketCapPage";
-// import { Navbar } from "./components/Navbar";
-// import { AddCardPage } from "./components/pages/AddCardPage";
-// import { Home } from "./components/pages/Home";
-// import { WalletPage } from "./components/pages/WalletPage";
+import Navbar from "./components/Navbar";
+import { AddCardPage } from "./components/pages/AddCardPage";
+import Login from "./pages/login";
+import { Routes, Route } from "react-router-dom";
+import Signup from "../src/pages/signup";
+import Support from "./pages/support";
+import { WalletPage } from "./components/pages/WalletPage";
 
 const App = () => {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      {/* <Home /> */}
-      {/* <WalletPage /> */}
-      {/* <AddCardPage /> */}
-      {/* <CoinSec /> */}
-      {/* <MarketCapPage /> */}
-      {/* <DashBoardNav /> */}
-      {/* <DashBoardTop /> */}
-      <Dashboard />
+      <Routes>
+        <Route path="/" element={<Navbar />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/sign-up" element={<Signup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/wallet-bal" element={<WalletPage />} />
+        <Route path="/add-card" element={<AddCardPage />} />
+      </Routes>
     </div>
   );
 };

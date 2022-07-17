@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   position: relative;
+  list-style: none;
 }
 
 .dash_top_sec {
@@ -30,19 +31,19 @@
         }
 
         .buttons_sec {
-          .button {
+          li {
+            inset-inline-start: -1rem;
             margin-top: 0.4rem;
             font-size: 14px;
             text-transform: uppercase;
+            text-decoration: none;
             background-color: red;
             border-radius: 100vmax;
             color: #fff;
             font-weight: 600;
-            width: 9rem;
             text-align: center;
-          }
-          .blue {
-            background-color: blue;
+            border: none;
+            cursor: pointer;
           }
         }
       }

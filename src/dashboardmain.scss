@@ -8,17 +8,21 @@
 .dashboard_main {
   &_inner {
     display: flex;
+
+    .user_name_sec {
+      position: absolute;
+      inset-inline-start: 15rem;
+      inset-block-start: 1rem;
+    }
+
     .dash_left_section {
       margin-right: 1rem;
 
       .dash_navbar {
         border: 1px solid #f0f0f0;
 
-        width: 12rem;
+        width: 13rem;
         height: 117vh;
-
-        &_inner {
-        }
       }
     }
     .dash_right_section {

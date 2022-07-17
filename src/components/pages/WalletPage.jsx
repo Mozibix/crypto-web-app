@@ -1,7 +1,7 @@
 import React from "react";
 import { walletData } from "../../userdata";
 
-export const WalletPage = () => {
+export const WalletPage = (props) => {
   const walletInfo = walletData.map((userCoins) => {
     return <WalletSection {...userCoins} />;
   });
@@ -24,14 +24,14 @@ export const WalletPage = () => {
                   <div className="logos_send_recieve">
                     <ul>
                       <li>
+                        <span>{props.nav_logo}</span>
+                      </li>
+                      {/* <li>
                         <span>logo1</span>
                       </li>
                       <li>
                         <span>logo1</span>
-                      </li>
-                      <li>
-                        <span>logo1</span>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                   <div className="text_send_recieve">

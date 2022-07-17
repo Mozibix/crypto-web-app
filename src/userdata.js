@@ -180,6 +180,7 @@ export const walletData = [
     coin_name: "Binance BNB",
     last_price: "$ 28.41 ",
     change_price: "-0.14%",
+    nav_logo: <FaBitcoin />,
     markets_icon: "logo1",
   },
   {
@@ -188,6 +189,7 @@ export const walletData = [
     coin_name: "BTC Bitcoin",
     last_price: "$ 11,295.29",
     change_price: "+2.09%",
+    nav_logo: <FaBitcoin />,
     markets_icon: "logo1",
   },
   {
@@ -196,6 +198,7 @@ export const walletData = [
     coin_name: "ETH Ethereum",
     last_price: "$ 371.73",
     change_price: "+4.87",
+    nav_logo: <FaBitcoin />,
     markets_icon: "logo1",
   },
 ];
@@ -324,8 +327,3 @@ export const dashTopData = [
     bottom_sec_btn: "buy currency",
   },
 ];
-
-//transfer
-//BiTransfer
-//recieve
-//MdOutlineCallReceived
